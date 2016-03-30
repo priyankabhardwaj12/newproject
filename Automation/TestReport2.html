@@ -189,9 +189,9 @@ function showOutput(id, name) {
 
 <div class='heading'>
 <h1>Unit Test Report</h1>
-<p class='attribute'><strong>Start Time:</strong> 2016-03-18 13:39:12</p>
-<p class='attribute'><strong>Duration:</strong> 0:49:59.748459</p>
-<p class='attribute'><strong>Status:</strong> Pass 2 Error 4</p>
+<p class='attribute'><strong>Start Time:</strong> 2016-03-29 18:21:18</p>
+<p class='attribute'><strong>Duration:</strong> 0:00:09.748885</p>
+<p class='attribute'><strong>Status:</strong> Error 1</p>
 
 <p class='description'></p>
 </div>
@@ -222,16 +222,16 @@ function showOutput(id, name) {
 </tr>
 
 <tr class='errorClass'>
-    <td>BasicActions</td>
-    <td>6</td>
-    <td>2</td>
+    <td>Sele1</td>
+    <td>1</td>
     <td>0</td>
-    <td>4</td>
-    <td><a href="javascript:showClassDetail('c1',6)">Detail</a></td>
+    <td>0</td>
+    <td>1</td>
+    <td><a href="javascript:showClassDetail('c1',1)">Detail</a></td>
 </tr>
 
 <tr id='ft1.1' class='none'>
-    <td class='errorCase'><div class='testcase'>test1</div></td>
+    <td class='errorCase'><div class='testcase'>test_sele1</div></td>
     <td colspan='5' align='center'>
 
     <!--css div popup start-->
@@ -245,10 +245,23 @@ function showOutput(id, name) {
         </div>
         <pre>
         
-ft1.1: Traceback (most recent call last):
-  File "autotest.py", line 26, in test1
-    driver.get(base_url)
-NameError: global name 'base_url' is not defined
+ft1.1: &gt;&gt;&gt; Out of stock
+product name--- Metro Load Carrying Helmet SH-1206 (Yellow)
+product price--- 42.25 / Piece
+specification desc----- Product Code
+SH-1206
+Application
+Load Carrying Helmet
+Colour
+Yellow
+Product Type
+Chin Strap
+Material of Construction
+HDPE - High-Density Polyethylene
+Traceback (most recent call last):
+  File "testing.py", line 43, in test_sele1
+    for keyfeatures in driver.find_element_by_xpath('//div[@id="keyFeature"]/ul'):
+TypeError: 'WebElement' object is not iterable
 
 
         </pre>
@@ -256,123 +269,14 @@ NameError: global name 'base_url' is not defined
     <!--css div popup end-->
 
     </td>
-</tr>
-
-<tr id='pt1.2' class='hiddenRow'>
-    <td class='none'><div class='testcase'>test2_price_change</div></td>
-    <td colspan='5' align='center'>pass</td>
-</tr>
-
-<tr id='ft1.3' class='none'>
-    <td class='errorCase'><div class='testcase'>test3_clickbuttons</div></td>
-    <td colspan='5' align='center'>
-
-    <!--css div popup start-->
-    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft1.3')" >
-        error</a>
-
-    <div id='div_ft1.3' class="popup_window">
-        <div style='text-align: right; color:red;cursor:pointer'>
-        <a onfocus='this.blur();' onclick="document.getElementById('div_ft1.3').style.display = 'none' " >
-           [x]</a>
-        </div>
-        <pre>
-        
-ft1.3: Traceback (most recent call last):
-  File "autotest.py", line 43, in test3_clickbuttons
-    AdtocartButtonField = WebDriverWait(driver,5).until(lambda driver: driver.find_element_by_xpath(AdtocartButtonxpath))
-  File "/usr/local/lib/python2.7/dist-packages/selenium/webdriver/support/wait.py", line 80, in until
-    raise TimeoutException(message, screen, stacktrace)
-TimeoutException: Message: 
-Stacktrace:
-    at FirefoxDriver.prototype.findElementInternal_ (file:///tmp/tmpueXD0I/extensions/fxdriver@googlecode.com/components/driver-component.js:10675)
-    at fxdriver.Timer.prototype.setTimeout/&lt;.notify (file:///tmp/tmpueXD0I/extensions/fxdriver@googlecode.com/components/driver-component.js:623)
-
-
-        </pre>
-    </div>
-    <!--css div popup end-->
-
-    </td>
-</tr>
-
-<tr id='ft1.4' class='none'>
-    <td class='errorCase'><div class='testcase'>test4_login</div></td>
-    <td colspan='5' align='center'>
-
-    <!--css div popup start-->
-    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft1.4')" >
-        error</a>
-
-    <div id='div_ft1.4' class="popup_window">
-        <div style='text-align: right; color:red;cursor:pointer'>
-        <a onfocus='this.blur();' onclick="document.getElementById('div_ft1.4').style.display = 'none' " >
-           [x]</a>
-        </div>
-        <pre>
-        
-ft1.4: Traceback (most recent call last):
-  File "autotest.py", line 60, in test4_login
-    MobFieldElement    = WebDriverWait(driver,10).until(lambda driver: driver.find_element_by_id(inputElementMobID))
-  File "/usr/local/lib/python2.7/dist-packages/selenium/webdriver/support/wait.py", line 80, in until
-    raise TimeoutException(message, screen, stacktrace)
-TimeoutException: Message: 
-Stacktrace:
-    at FirefoxDriver.prototype.findElementInternal_ (file:///tmp/tmpsBWkqh/extensions/fxdriver@googlecode.com/components/driver-component.js:10675)
-    at fxdriver.Timer.prototype.setTimeout/&lt;.notify (file:///tmp/tmpsBWkqh/extensions/fxdriver@googlecode.com/components/driver-component.js:623)
-
-
-        </pre>
-    </div>
-    <!--css div popup end-->
-
-    </td>
-</tr>
-
-<tr id='ft1.5' class='none'>
-    <td class='errorCase'><div class='testcase'>test5_inputs</div></td>
-    <td colspan='5' align='center'>
-
-    <!--css div popup start-->
-    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft1.5')" >
-        error</a>
-
-    <div id='div_ft1.5' class="popup_window">
-        <div style='text-align: right; color:red;cursor:pointer'>
-        <a onfocus='this.blur();' onclick="document.getElementById('div_ft1.5').style.display = 'none' " >
-           [x]</a>
-        </div>
-        <pre>
-        
-ft1.5: Traceback (most recent call last):
-  File "autotest.py", line 82, in test5_inputs
-    PinFieldElement       = WebDriverWait(driver,10).until(lambda driver: driver.find_element_by_id(inputElementPinID))
-  File "/usr/local/lib/python2.7/dist-packages/selenium/webdriver/support/wait.py", line 80, in until
-    raise TimeoutException(message, screen, stacktrace)
-TimeoutException: Message: 
-Stacktrace:
-    at FirefoxDriver.prototype.findElementInternal_ (file:///tmp/tmphAzVEG/extensions/fxdriver@googlecode.com/components/driver-component.js:10675)
-    at fxdriver.Timer.prototype.setTimeout/&lt;.notify (file:///tmp/tmphAzVEG/extensions/fxdriver@googlecode.com/components/driver-component.js:623)
-
-
-        </pre>
-    </div>
-    <!--css div popup end-->
-
-    </td>
-</tr>
-
-<tr id='pt1.6' class='hiddenRow'>
-    <td class='none'><div class='testcase'>test6_screenshort</div></td>
-    <td colspan='5' align='center'>pass</td>
 </tr>
 
 <tr id='total_row'>
     <td>Total</td>
-    <td>6</td>
-    <td>2</td>
+    <td>1</td>
     <td>0</td>
-    <td>4</td>
+    <td>0</td>
+    <td>1</td>
     <td>&nbsp;</td>
 </tr>
 </table>

@@ -4,11 +4,12 @@ from scrapy.item import Item,Field
 
 class CollegeduniaItem(Item):
 	url = Field()
-	title = Field()
-	college_name = Field()
-	city = Field()
-	Courses = Field()
-	Avg_Fees_per_Year = Field()
+	Institute_Name = Field()
+	Courses_Offered = Field()
+	Adress= Field()
+	Contact_No = Field()
+	Year = Field()
+	Interance_eaxam = Field()
 	Rating = Field()
-	Seats = Field()
+	Approval = Field()
 	pass
